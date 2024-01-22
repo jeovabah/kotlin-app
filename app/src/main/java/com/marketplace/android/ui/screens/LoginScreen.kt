@@ -40,7 +40,9 @@ fun LoginScreen(viewModel: LoginViewModel) {
                 text = "JÁ TENHO CONTA",
                 backgroundColor = Color(0xFF4CAF50), // Ajuste a cor do botão conforme necessário
                 contentColor = Color.White
-            ) { viewModel.onLoginClick() }
+            ) {
+                viewModel.onLoginClick();
+            }
 
             Spacer(modifier = Modifier.height(16.dp))
 

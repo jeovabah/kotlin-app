@@ -1,13 +1,14 @@
 package com.marketplace.android.viewmodel
 
 import androidx.lifecycle.ViewModel
+import androidx.navigation.NavController
 
-class LoginViewModel : ViewModel() {
+class LoginViewModel(private val navController: NavController) : ViewModel() {
     fun onLoginClick() {
-        // Adicione a lógica para quando o usuário clica em "Já tenho conta"
+        navController.navigate("loginAuth");
     }
 
     fun onFirstAccessClick() {
-        // Adicione a lógica para quando o usuário clica em "Primeiro acesso"
+        navController.navigate("register");
     }
 }
